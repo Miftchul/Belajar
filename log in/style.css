@@ -1,0 +1,72 @@
+/*
+==font-styling==
+
+    ==font-family = MENGATUR JENIS FONT YANG AKAN DIGUNAKAN
+        CONTOH = body {font-family: arial, verdana, sans-serif;}
+    ==font-size   = MENGATUR UKURAN FONT, 
+        VALUE = px, %, em
+    ==font-weight = MENGATUR KETEBALAN FONT
+        VALUE = lighter, normal, 100-900, bold, bolder
+    ==font-variant= MENGUBAH FONT MENJADI small caps
+        VALUE = normal, small caps
+    ==font-style  = MENGUBAH FONT MENJADI BERCETAK MIRING
+     VALUE = normal, italic, oblique
+    ==line-height = MENGATUR SPASI ANTA BARIS
+
+==SHORTHAND/SINGKATAN==
+    CONTOH = body{
+        font-style: italic;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 16px
+        line-height: 18px;
+        font-family: helvetica, arial, sans-serif;
+    }
+    AKAN MENJADI 1 LINE SAJA : 
+        body{
+            font: italic normal bold 16px/18px helvetica,arial,sans-serif;
+        }
+
+==Text-Styling==
+    color           = MEMBERI WARNA
+        NB : NAMA WARNA, HEXADECIMAL,RGB
+    text-aligh      = MENGATUR FORMAT PARAGRAF / TEXT
+        NB : left    = RATA KIRI
+             right   = RATA KANAN
+             center  = RATA TENGAH
+             justify = RATA KIRI KANAN
+    text-indent     = MEMBERI INDENTASI PADA PARAGRAF / TEXT
+        NB : px, %
+    text-decoration = MENGATUR DEKORASI PADA TEXT
+        NB : none         =
+             underline    = GARIS BAWAH DITULISAN
+             overline     = GARIS DIATAS TULISAN
+             line-through = MENCORET TULISAN
+    text-transform  = MENGUBAH JENIS HURUF MENJADI BESAR, KECIL,/ KAPITAL
+        NB : none, lowercase, uppercase, capitalize
+    letter-spacing  = MENGATUR SPASI ANTAR HURUF
+        NB : normal, px
+    word-spacing    = MENGATUR SPASI ANTAR KATA
+        NB : normal, px
+*/
+h1{
+    color:black;
+    font-family: fantasy;
+    font-size: 50px;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.edit1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    line-height: 70%;
+}
+.edit2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60%;
+}
+.edit3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Kuliah Pemrograman Web">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Agus Miftachul huda">
+	<title>Contoh Halaman Web</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!--HEADING, TERDIRI DARI "h1-h6" -->
+	<h1>Selamat Datang di Halaman Web Saya</h1>
+	<h2>Selamat Datang di Halaman Web Saya</h2>
+	<h3>Selamat Datang di Halaman Web Saya</h3>
+	<h4>Selamat Datang di Halaman Web Saya</h4>
+	<h5>Selamat Datang di Halaman Web Saya</h5>
+	<h6>Selamat Datang di Halaman Web Saya</h6>
+
+
+	<!--PARAGRAF-->
+	<p>Ini adalah paragraf pertama di halaman web saya.</p>
+	<p>Ini adalah paragraf kedua di halaman web saya.</p>
+
+	<h2>Daftar Buah</h2>
+
+	<!--PENDUKUNG TEKS-->
+	<!--br=BARIS BARU hr=GARIS HORIZONTAL em=-->
+	<br><hr> TEST AJA
+	
+	<!--LIST(BULLET & NUMBERING)
+		ul= LIST TIDAK TERURUT(UNORDERED LIST), DEFAULD NYA TIDAK BERURUTAN, JIKA INGIN MENGUBAHNYA MENGGUNAKAN ATTRIBUT "TYPE"
+			CONTOH = <ul type="disc, square, circle">....</ul>
+		ol= ORDER LIST, DEFAULD NYA TERDIRI DARI ANGKA, JIKA INGIN MERUBAH HARUS MENGGUNAKAN ATTRIBUT TAMBAHAN "TYPE"
+			CONTOH = <ol type="1,A,a,I,i">....</ol>
+		li= LIST ITEM
+		dl= DEFINITON LIST (DIGUNAKAN UNTUK TERMINOLOGI ATAU DESKRIPSI("DESCRIPTION")) 
+			YANG ISINYA ITU BERPASANGAN DENGAN <dt>...</dt> DAN <dd>...</dd>
+			CONTOH = <dl>
+						<dt>term 1</dt>
+						<dd>description</dd>
+						<dt>term 2</dt>
+						<dd>description</dd>
+						...
+					 </dl>
+			KET = JIKA MEMPUNYAI "term" 5 ATAU LEBIH MAKA "description" MENGIKUTI
+		dt= TERMINOLOGI(term)
+		dd= DESCRIPSI (DESCRIPTION) ()-->
+		<h3>Nama Kota</h3>
+		<!--TIDAK MENGGUNAKAN ATTRIBUT TAMBAHAN-->
+		<ol>
+			<li>Ngawi</li>
+			<li>Malang</li>
+			<li>Madiun</li>
+			<li>Surabaya</li>
+		</ol>
+		<!--MENGGUNAKAN ATTRIBUT TAMBAHAN-->
+		<ol type="A">
+			<li>Ngawi</li>
+			<li>Malang</li>
+			<li>Madiun</li>
+			<li>Surabaya</li>
+		</ol>
+		<h3>Nama Buah</h3>
+		<!--TIDAK MENGGUNAKAN ATTRIBUT TAMBAHAN-->
+		<ul>
+			<li>Apel</li>
+			<li>Pisang</li>
+			<li>Jeruk</li>
+		</ul>
+		<!--MENGGUNAKAN ATTRIBUT TAMBAHAN-->
+		<ul type="circle">
+			<li>Apel</li>
+			<li>Pisang</li>
+			<li>Jeruk</li>
+		</ul>
+		<h3>PEMROGRAMAN WEB 1</h3>
+		<dl>
+			<dt><strong>HTML</strong></dt>
+			<dd>hyperhtext Markup Language</dd>
+			<dt><strong>CSS</strong></dt>
+			<dd>Cascading Style Sheet</dd>
+		</dl>
+
+	<!--tabel= MEMBUAT TABLE
+		TABLE MEMILIKI 2 JENIS : SIMPLE DAN COMPLEX
+		==SIMPLE==
+		TABLE SIMPLE TERDIRI DARI TAG : table, tr, td, 
+		CONTOH SOURCH CODE :
+		<table>
+			<tr>
+				<td>baris 1, kolom 1</td>
+				<td>baris 1. kolom 2</td>
+			</tr>
+			<tr>
+				<td>baris 1, kolom 1</td>
+				<td>baris 1, kolom 2</td>
+			</tr>
+		</table>
+
+		==COMPLEX==
+		TABLE COMPLEX TERDIRI DARI TAG : table, thead, tbody, tr, th, td
+		CONTOH SOURCH CODE :
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Kolom 1</th>
+					<th>Kolom 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Baris 1</th>
+					<td>baris 1, kolom 1</td>
+					<td>baris 1, kolom 2</td>
+				</tr>
+				<tr>
+					<th>Baris 2</th>
+					<td>baris 2, kolom 1</td>
+					<td>baris 2, kolom 2</td>
+				</tr>
+			</tbody>
+		</table>
+
+		==BEBERAPA ATTRIBUT YANG BISA DIGUNAKAN DIDALAM TABLE==
+		border, cellspacing, cellpadding, colspan, rowspan
+			==BORDER : DIGUNAKAN UNTUK GARIS DI SEKITAR CELL
+			==CELLSPACING : MENAMBAH JARAK ANTAR CELL
+			==CELLPADDING : MEMBERI LUAS SEBUAH CELL 
+			KE-3 ITU DIGYNAKAN UNTUK CSS 
+		CONTOH :
+		<table border="1"> 
+			<tr>
+				<td>baris 1, kolom 1</td>
+				<td>baris 1. kolom 2</td>
+			</tr>
+			<tr>
+				<td>baris 1, kolom 1</td>
+				<td>baris 1, kolom 2</td>
+			</tr>
+		</table>
+			==COLSPAN : DIGNAKAN UNTUK MENGGABUNGKAN CELL YANG HORIZONTAL ATAU COLOM
+			==ROWSPAN : DIGUNAKAN UNTUK MENGGABUNGKAN CELL YANG VERTIKAL ATAU BARIS
+		CONTOH COLSPAN : 
+		<table border="1" cellspacing="0" cellpadding="5">
+			<tr>
+				<td>1,1</td>
+				<td colspan="2">colspan 2</td>
+			</tr>
+			<tr>
+				<td>2,1</td>
+				<td>2,2</td>
+				<td>2,3</td>
+			</tr>
+			<tr>
+				<td>3,1</td>
+				<td>3,2</td>
+				<td>3,3</td>
+			</tr>
+		</table>
+
+		CONTOH ROWSPAN :
+
+		-->
+			
+		
+	<!--TABLE SIMPLE==TANPA ATTRIBUT-->
+	<table>
+		<tr>
+			<td>baris 1, kolom 1</td>
+			<td>baris 1. kolom 2</td>
+		</tr>
+		<tr>
+			<td>baris 2, kolom 1</td>
+			<td>baris 2, kolom 2</td>
+		</tr>
+	</table>
+	<!--TABLE SIMPLE==MENGGUNAKAN ATTRIBUT-->
+	<br>
+	<table border="1">
+		<tr>
+			<td>baris 1, kolom 1</td>
+			<td>baris 1. kolom 2</td>
+		</tr>
+		<tr>
+			<td>baris 2, kolom 1</td>
+			<td>baris 2, kolom 2</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1" cellspacing="0">
+		<tr>
+			<td>baris 1, kolom 1</td>
+			<td>baris 1. kolom 2</td>
+		</tr>
+		<tr>
+			<td>baris 2, kolom 1</td>
+			<td>baris 2, kolom 2</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>baris 1, kolom 1</td>
+			<td>baris 1. kolom 2</td>
+		</tr>
+		<tr>
+			<td>baris 2, kolom 1</td>
+			<td>baris 2, kolom 2</td>
+		</tr>
+	</table>
+	<!--TABLE COMPLEX-->
+
+<br>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Kolom 1</th>
+				<th>Kolom 2</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Baris 1</th>
+				<td>baris 1, kolom 1</td>
+				<td>baris 1, kolom 2</td>
+			</tr>
+			<tr>
+				<th>Baris 2</th>
+				<td>baris 2, kolom 1</td>
+				<td>baris 2, kolom 2</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+<!--==TABLE MENGGUNAKAN ATTRIBUT COLSPAN DAN ROWSPAN==
+	COLSPAN : -->
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>1,1</td>
+			<td>1,2</td>
+			<td>1,3</td>
+		</tr>
+		<tr>
+			<td>2,1</td>
+			<td>2,2</td>
+			<td>2,3</td>
+		</tr>
+		<tr>
+			<td>3,1</td>
+			<td>3,2</td>
+			<td>3,3</td>
+		</tr>
+	</table>
+<br>
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>1,1</td>
+			<td colspan="2">colspan 2</td>
+		</tr>
+		<tr>
+			<td>2,1</td>
+			<td>2,2</td>
+			<td>2,3</td>
+		</tr>
+		<tr>
+			<td>3,1</td>
+			<td>3,2</td>
+			<td>3,3</td>
+		</tr>
+	</table>
+	<br>
+<!--ROWSPAN : -->
+	<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td rowspan="3">rowspan 3</td>
+			<td colspan="2">colspan 2</td>
+		</tr>
+		<tr>
+			<td>2,2</td>
+			<td>2,3</td>
+		</tr>
+		<tr>
+			<td>3,2</td>
+			<td>3,3</td>
+		</tr>
+	</table>
+	<br><br>
+
+	<!--
+		==FORM==
+		elemenet yang dignakan untuk mengelola data	dari input yang dilakukan 
+		oleh user 
+		
+		==Elememt form==
+		input 	 = User bisa menginputkan sesuatau(colom)
+		textarea = Mengisiskan komentar, pesan, atau email
+		select 	 = Digunkan untuk drop down atau combo box
+		button 	 = Tombol untuk mengirimkan tanda
+		label 	 = Untuk menandai sebuah element "input"
+
+		Contoh :
+		input dengan attribute "type" untuk menginputkan yang mana!!!
+		<input type="...">...</input>
+		text	 =
+		password =
+		radio	 =
+		checkbox =
+		==MELAKUKAN PENGIRIMAN==
+		-submit- =
+		-reset-	 =
+		-button- =
+		...
+	-->
+
+	<form action="">
+		  Username : <input type="text">
+	</form><br><br>
+	<!--JIKA USER MENGKLIK PADA NAME "username" MAKA AKAN
+		OTOMASI MASUK INPUTAN-->
+	<form action="">
+		<label for="username">username : </label>
+		<input type="text" id="username"><br>
+		<label for="password">password :</label>
+		<input type="password" id="password"><br>
+	<!--
+		==RADIO==
+		dengan atrribute "name" itu menandakan sebuah grup pada "input radio"
+		
+	-->
+		<input type="radio" name="jenis kelamin" id="laki-laki">
+		<label for="laki-laki">laki-laki</label>
+		<input type="radio" name="jenis kelamin" id="perempuan">
+		<label for="perempuan">perempuan</label><br>
+
+	<!--
+	==CHECKBOX==
+	-->
+		<input type="checkbox" id="membaca"><label for="membaca">membaca</label>
+		<input type="checkbox" id="olahraga"><label for="olahraga">olahraga</label><br>
+		<input type="checkbox" id="menulis"><label for="menulis">menulis</label>
+		<input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label><br>
+
+	<!--
+		==TEXTAREA==
+	-->
+	<textarea name="artikel" id="artikel" cols="20" rows="2"></textarea>
+<br>
+<!--
+	==tropdown/select==
+	CONTOH :
+	 <select>
+		<option> opsi 1 </option>
+		<option> opsi 2 </option>
+		<option> opsi 3 </option>
+		...
+	 </select>
+	 ==combobox==
+-->
+		<select name="" id="">
+			<option value="">Korea</option>
+			<option value="">Japan</option>
+			<option value="">China</option>
+			<option value="">Canada</option>
+		</select>
+
+<br><br>
+	<!--
+		==PENGIRIMAN==
+	-->
+		<button type="submit">kirim</button>
+		<button type="reset">reset</button>
+		<button disabled="disabled">tidak tau</button>
+	</form>
+
+
+	<h3>Gambar Kucing Lucu</h3>
+	<h3>Vidio Kucing Lucu</h3>
+
+	<!--==TAG img = MENYIMPAN GAMBAR==
+		KET = FILE GAMBAR YANG DAPAT KITA SIMPAN ADA 2 :
+			1. INTERNAL RESOURCE 
+				KET: GAMBAR YANG KITA MILIKI SENDIRI DAN BERADA DI FOLDER YANG SAMA !!!
+				CONTOH = logo.png, background.jpg, DLL
+					KET: JIKA GAMBAR BERADA DI FOLDER YANG BERBEDA MAKA:
+						CONTOH = FOLDER IMG UNTUK MENYIMPAN GAMBAR KITA
+								 FOLDER USER SOURCE CODE KITA 
+							CODE = <img src="../img/logo.jpg" alt="NAMA GAMBAR">
+			2. EXTERNAL RESOURCE
+				KET: GAMBAR DARI HASIL BROWSER(LINK GAMBAR PADA BROWSER) 
+					SEHINGGA KITA TIDAK PERLU MENYIMPAN GAMBARNYA, HANYA MENGAMBIL 
+					LINK NYA SAJA
+				CONTOH = https://cdn0-production-images-kly.akamaized.net/br7Q40pkf_HW8FEGgqaKBhbJZ3s=/382x0:1227x845/1200x1200/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3457588/original/052183700_1621230651-1500845.jpg
+
+		==CODE = <img src="..." alt="..."==> 
+		==ADAPUN ATTRIBUT YANG DIMILIKI IMG==
+			KET: src    = BERFUNGSI UNTUK MENGISI FILE ATAU LINK GAMBAR 
+						YANG AKAN KITA TARUH
+				 alt    = (ALTERNATIF GAMBAR) BEFUNGSI UNTUK MENGISI NAMA GAMBAR KITA KETIKA 
+		 				TERJADI ERROR SUPAYA USER DAPAT MENGETAHUI, GAMBAR ITU APA?
+				 title  = DIGUNAKAN UNTUK MEMBERI JUDUL PADA GAMBAR
+				 width  = UNTUK MENGATUR LEBAR GAMBAR
+				 height = UNTUK MENGATUR TINGGI GAMBAR 
+					KET WIDTH & HEIGHT: 1. JIKA MENULIS SALAH SATU SAJA, MISAL "WIDTH" MAKA HEIGHT AKAN
+									   		MENYESESUAIKAN-NYA
+									    2. JIKA MENULIS KEDUA-NYA MAKA GAMBAR AKAN KETARIK SESUAI UKURAN 
+											YANG KITA TULIS 
+
+		==UNTUK MENULIS WIDTH & HEIGHT==
+			px = MENULISKAN DENGAN ANGKA
+			CONTOH: <img src="logo.png" widht="500" height="500"
+			%  = RELATIF DENGAN UKURAN HALAMANNYA DAN AKAN MENYESESUAIKAN UKURAN HALAMAN-NYA 
+				MESKIPUN UKURAN LAYAR HP DAN LAPTOP BERBEDA!!!
+			CONTOH: <img src="logo.png" widht="50%" 
+		
+		==HYPERLINK IMAGE==
+		CONTOH: <a href="http://Facebook.com">
+		          	<img src="../img/logo.jpg">
+				</a>--> 
+		
+	<img src="https://cdn0-production-images-kly.akamaized.net/br7Q40pkf_HW8FEGgqaKBhbJZ3s=/382x0:1227x845/1200x1200/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3457588/original/052183700_1621230651-1500845.jpg" alt="Kucing Lucu">
+	<video src=""></video>
+	<div class="logo">
+		<a href="http://Facebook.com">
+			<img src="../img/logo.jpg" width="50%">
+		</a>
+	</div>
+
+	<!--HYPERLINK(WEB LINK) 
+		LINK ADALAH SEBUAH KONEKSI DARI SEBUAH WEB KE KONEKSI LAIN
+		LINK MENGGUNAKAN TAG "<a></a> ATAU anchor"
+		CONTOH :
+			<p>klik <a href="https://www.google.com/">Disini</a> untuk masuk ke Google.</p>  
+		<a href="..."></a> BISA DI ISI DENGAN EXTERNAL LINK DAN INTERNAL LINK / RELATIVE URL 
+				ATAU HALAMAN WEBSITE LAIN YANG DI DALAM DOMAIN KITA ATAU 1 DOMAIN
+		==CONTOH EXTERNAL LINK = htttp://www.google.com, http://instagram.com/agusmiftachul29== 
+		==CONTOH INTERNAL LINK = product.html, ../admin/index.html==  
+		RELATIV URL =  PADA SEBUAH FOLDER "BELAJAR WEB" DISINI KITA ADA LAGI FOLDER BARU YANG BERISI file PADA KETERANGAN "halaman3"  
+		==CONTOH RELATIV URL = FOLDER1 BERISI file halaman 1 dan halaman 2 SEDANGKAN-
+								halaman 3 BERADA DI FOLDER1 TETAPI MASUK PADA BAGIAN FOLDER TERSENDIRI
+								MISALNYA = "FOLDER1 BERISI file dan folder baru" 
+		==CONTOH PROGRAM = 	<p>klik <a href="admin/halaman3">Disini</a> untuk masuk ke Google.</p>
+ 		==KET RELATIV URL = JIKA SEBUAH FOLDER BERISI FOLDER ADMIN DENGAN "file1 dan file2" 
+							DAN FOLDER USER BERISI "file3", JIKA INGIN MENGOPERASIKAN NYA SEPERTI INI :
+							==FOLDER ADMIN (file1 ke file2 CUKUP MENGGUNKAN <a href="file2.html" BEGITU PULA SEBALIKNYA )==
+							  DIKARENAKAN MASIH DALAM 1 FOLDER, JIKA BERBEDA FOLDER SEPERTI INI :
+							==FOLDER USER (file1 ke file3 HARUS MENGGUNKAN <a href="../user/file3.html")==
+							  DIKARENAKAN BERBEDA FOLDER, BEGITU PULA SEBALIKNYA 
+							==FOLDER USER (file3 ke file2 HARUS MENGGUNKAM <a href="../admin/file2.html")== 
+		==PAGE ANCHOR==
+		KET : BAGIAN TERTENTU DARI SEBUAH HALAMAN
+			  #about, index.html#contack
+		==<a target="..."></a> (MENGGUNAKAN ATTRIBUT TAMBAHAN JIKA INGIN MASUK KE HALAMAN TAB BARU)==
+		KET : "target adalah ATTRIBUT" DENGAN VALUE "_self, _blank, _parent, _top"
+		KET VALUE : _self   = MEMBUKA LINK PADA HALAMAN(TAB) YANG SAMA
+					_blank  = MEMBUKA LINK PADA HALAMAN(TAB) BARU 
+					_parent =
+					_top 	= -->
+		
+	<!--HYPERLINK MENGGUNKAN EXTERNAL LINK-->
+	<p>klik <a href="https://www.google.com/">Disini</a> untuk masuk ke Google.</p>
+	<p>Silahkan kunjungi <a href="https://www.google.com/">Google</a> untuk mencari informasi lebih lanjut.</p>
+	<p>Silahkan Kunjungi <a href="https://www.YouTube.com/">YouTube</a> Untuk mencari vidio anda</p>
+	<p>Silahkan Kunjungi <a href="https://www.Instagram.com/">Instagram</a> Untuk masuk Instagram</p>
+	<p>Silahkan Kunjungi <a href="https://www.Twitter.com/">Twitter</a> Untuk Masuk Twitter</p>
+	<p>Silahkan Kunjungi <a href="https://www.Facebook.com/">Facebook</a> Untuk masuk Facebook</p>
+	<br><br>
+	<!--HYPERLINK MENGGUNKAN INTERNAL LINK-->
+	<p>klik <a href="halaman2.html">Disini</a> untuk masuk ke halaman2!!!</p>
+	<!--==RELATIV URL==-->
+	<!--==IMG==-->
+	<p>klik <a href="../admin/halaman3.html">Disini</a> untuk masuk ke halaman3!!!</p>
+	<!--==PAGE ANCHOR==-->
+	<p>klik <a href="../halaman4/halaman4.html">Disini</a> untuk masuk ke halaman4!!!</p>
+	<!--==MENGGUNAKAN HALAMAN BARU(NEW TAB) <a target="_blank"==-->
+	<p>klik <a href="../halaman4/halaman4.html#bagian2" target="_blank">Disini</a> untuk masuk ke halaman4, bagian2 !!!</p>
+
+
+	<!--form
+		form, input, select, button, fieldset, Dll-->
+	<button type="submit">1</button>
+	<button type="submit">2</button>
+	<button type="submit">3</button>
+	<button type="submit">4</button>
+	<button type="submit">10</button>
+	<input type="button" value=">>">
+	<fieldset>STIKI KAMPUSKU</fieldset>
+	<select name="" id="">1</select>
+	
+	<!--script= UNTUK MENYIMPAN SCRIPT JAVASCRIPT-->
+	<script src="web.js"></script>
+
+	<!--objeck= OBJECK MULTIMEDIA UNTUK MENYIMPAN FLASH MISALKAN-->
+	<object data="Agus" type="submit"></object>
+
+	<!--Grouping= UNTUK MENYIMAPAN GRUP LEBIH KE CSS
+		div, span-->
+	<div>INDONESIA</div>
+	<span>RAYA</span>
+
+	<!--struktur dari sebuah <tag> 
+		contoh= <namatag atribut="nilai(value)">
+				<body bgcolor="lightblue"> 
+	====SEBUAH TAG BOLEH LEBIH DARI 1 ATRIBUT====
+		contoh= <body bgcolor="lightblue" id="myid" class="myclass">  
+
+	====SEBUAH TAG BOLEH TIDAK MEMILIKI ATRIBUT MAUPUN MEMILIKI ATRIBUT====
+
+	====ATRIBUT GLOBAL====
+	acceskey= ELEMENT INI BISA DIGUNAKAN UNTUK MENG AKSES KEYBORD ATAU SHORCARD
+	class= UNTUK MENCARI CLASS NYA APA
+	id= UNTUK MENCARI ID NYA APA
+	dir= UNTUK MENENTUKAN ARAH TULISANNYA DERECTION
+	lang= UNTUK LANGUAGE
+	style= UNTUK MENYISIPKAN STYLE CSS
+	tabindex= UNTUK MENGURUTKAN
+	title= MEMBERI JUDUL SEBUAH ELEMENT
+
+	====BISA KUNJUNGI WWW.W3SCHOLL.COM/TAG
+-->
+
+
+</body>
+</html>
